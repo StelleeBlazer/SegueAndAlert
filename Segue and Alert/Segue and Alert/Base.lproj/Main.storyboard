@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YG4-m1-CJJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segue_and_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue and Alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90q-tB-Qrc">
+                                <rect key="frame" x="100" y="138" width="214" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a0E-3d-Lc9">
+                                <rect key="frame" x="100" y="192" width="214" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyn-ZC-6b6">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="40"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5rR-MK-tgR"/>
+                                        </constraints>
+                                        <state key="normal" title="Halaman Biru">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eXo-MG-zsD" kind="show" id="laA-cf-Wgu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btd-3F-yq2">
+                                        <rect key="frame" x="0.0" y="48" width="214" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Halaman Merah">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eid-6N-cpD" kind="showDetail" id="VqF-Am-YZf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7c-xO-czo">
+                                        <rect key="frame" x="0.0" y="96" width="214" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Halaman Hijau">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Tn3-ac-B8F" kind="presentation" id="D0Q-7L-zOa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6o-J6-fPI">
+                                        <rect key="frame" x="0.0" y="144" width="214" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <state key="normal" title="Halaman Ungu">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnToHalamanUnguWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1AN-mQ-kRw"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nama" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CcK-N6-NqZ">
+                                        <rect key="frame" x="0.0" y="192" width="214" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Umur" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOU-cj-zuC">
+                                        <rect key="frame" x="0.0" y="234" width="214" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlA-8M-LpF">
+                                        <rect key="frame" x="0.0" y="276" width="214" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Halaman Kuning">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnToHalamanKuning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpd-yr-e9g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El5-BD-NeN">
+                                        <rect key="frame" x="0.0" y="324" width="214" height="34"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <state key="normal" title="Alert">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxL-On-WAY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-Y7-T4G">
+                                        <rect key="frame" x="0.0" y="366" width="214" height="34"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <state key="normal" title="Action Sheet">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAy-KH-UsB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="El5-BD-NeN" firstAttribute="height" secondItem="FOU-cj-zuC" secondAttribute="height" id="Af9-jC-gve"/>
+                                    <constraint firstItem="d6o-J6-fPI" firstAttribute="height" secondItem="n7c-xO-czo" secondAttribute="height" id="Hi6-GA-5Q6"/>
+                                    <constraint firstItem="Jhi-Y7-T4G" firstAttribute="height" secondItem="El5-BD-NeN" secondAttribute="height" id="I1S-rA-Pdn"/>
+                                    <constraint firstItem="Btd-3F-yq2" firstAttribute="height" secondItem="nyn-ZC-6b6" secondAttribute="height" id="V2A-bw-lZX"/>
+                                    <constraint firstItem="nlA-8M-LpF" firstAttribute="height" secondItem="d6o-J6-fPI" secondAttribute="height" id="fIB-1C-CpW"/>
+                                    <constraint firstItem="n7c-xO-czo" firstAttribute="height" secondItem="Btd-3F-yq2" secondAttribute="height" id="jNK-jp-6yA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="90q-tB-Qrc" secondAttribute="trailing" constant="100" id="2vO-ha-ih6"/>
+                            <constraint firstItem="a0E-3d-Lc9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="E0j-Qe-AyM"/>
+                            <constraint firstItem="a0E-3d-Lc9" firstAttribute="top" secondItem="90q-tB-Qrc" secondAttribute="bottom" constant="30" id="OPD-1T-xz0"/>
+                            <constraint firstItem="90q-tB-Qrc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="aCp-Gf-36k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a0E-3d-Lc9" secondAttribute="trailing" constant="100" id="yXg-H4-d7d"/>
+                            <constraint firstItem="90q-tB-Qrc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="yrQ-m4-erK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G4E-Su-Xfp"/>
+                    <connections>
+                        <outlet property="tfNama" destination="CcK-N6-NqZ" id="bgU-2A-gGB"/>
+                        <outlet property="tfUmur" destination="FOU-cj-zuC" id="oi9-iU-4Hv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="78.348214285714278"/>
+        </scene>
+        <!--Merah View Controller-->
+        <scene sceneID="bpO-vq-uSQ">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="eid-6N-cpD" customClass="MerahViewController" customModule="Segue_and_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0q-RC-hhM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RR9-kv-DVi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Halaman Merah" id="Bsx-ab-6GD">
+                                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="vPT-tE-jf0">
+                                            <connections>
+                                                <action selector="dismissView:" destination="eid-6N-cpD" id="mTl-8b-0SH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cSK-Vl-LSa"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJJ-VH-BEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028.985507246377" y="536.38392857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QSM-Ro-NPD">
+            <objects>
+                <viewController id="Tn3-ac-B8F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJr-cd-0tC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ozc-gx-YMl"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xLz-kA-tjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.9420289855075" y="107.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8RR-4h-hsu">
+            <objects>
+                <viewController id="eXo-MG-zsD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RhG-xy-ny8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="AmL-X2-LLA"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MWP-XL-12v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHe-1K-eAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028.985507246377" y="-287.27678571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cN1-6g-PDB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YG4-m1-CJJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DE1-x1-SIS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="E3K-Z7-OYc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XyV-hj-EhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </scene>
+        <!--Kuning View Controller-->
+        <scene sceneID="qxp-uc-Cuo">
+            <objects>
+                <viewController storyboardIdentifier="halamanKuning" id="H7Y-D9-min" customClass="kuningViewController" customModule="Segue_and_Alert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dzK-09-Rft">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bAG-Nf-hAa">
+                                <rect key="frame" x="100" y="134" width="214" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bju-Fc-mHd">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Umur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vO-LB-RDw">
+                                        <rect key="frame" x="0.0" y="39" width="214" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EwH-pa-Z1O"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="EwH-pa-Z1O" firstAttribute="trailing" secondItem="bAG-Nf-hAa" secondAttribute="trailing" constant="100" id="YMN-0X-wsn"/>
+                            <constraint firstItem="bAG-Nf-hAa" firstAttribute="leading" secondItem="EwH-pa-Z1O" secondAttribute="leading" constant="100" id="knO-TI-Q7e"/>
+                            <constraint firstItem="bAG-Nf-hAa" firstAttribute="top" secondItem="EwH-pa-Z1O" secondAttribute="top" constant="90" id="zAL-Gw-aMJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblNama" destination="bju-Fc-mHd" id="QtS-cd-EaJ"/>
+                        <outlet property="lblUmur" destination="7vO-LB-RDw" id="6jC-Vi-mZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rln-MD-G47" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="794.86607142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zP6-KL-BL1">
+            <objects>
+                <viewController storyboardIdentifier="halamanUngu" id="fqb-56-w27" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yvg-nV-fcM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x4o-DO-7SB"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoG-z2-m5m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="795"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
